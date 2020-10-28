@@ -85,7 +85,7 @@ export default class Login extends Component {
     Remember Me
   </label>
 </div>
-<button type="submit" className="btn btn-primary btn-block col-4-btn radius">
+<button type="submit" color="black" className="btn btn-outline-primary btn-block col-6-btn radius">
  Login
 </button>
 </form>

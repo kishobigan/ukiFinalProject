@@ -34,12 +34,12 @@ class SearchAppointments extends React.Component {
   };
   render() {
     return (
-      <InputGroup className="mb-3">
+      <InputGroup className="mb-2 radius">
         <Input
           id="searchField"
           placeholder="Search appointments by Service's name"
           type="text"
-          className="form-control"
+          className="form-control mr-sm-2 radius"
           onChange={this.handleSearch}
         />
         {/*

@@ -110,9 +110,9 @@ export default class Services extends Component {
           <div className="col-lg-8 login-con">
           <div className=" mt-4">
           {this.props.isAdmin ? (
-            <h3>Service Stations List</h3>
+            <h3 className="center">Service Stations List</h3>
           ):(
-            <h1>Find service stations near you.</h1>
+            <h1 className="center">Find service stations near you.</h1>
           )}
           <hr />
           <div
@@ -123,12 +123,12 @@ export default class Services extends Component {
           <form onSubmit={this.searchServices}>
             <div className="form-group">
               <label htmlFor="exampleInputEmail1">
-                Search service stations in you location.
+
               </label>
               <input
                 type="name"
                 className="form-control"
-                placeholder="Enter address"
+                placeholder="Search Service Station By Address"
                 onChange={(e) => this.searchServices(e.target.value)}
               />
             </div>
@@ -152,18 +152,18 @@ export default class Services extends Component {
                         });
                         this.toggle();
                       }}
-                      className="btn mt-2 btn-primary btn-block"
-                      color="success"
+                      className="btn btn-outline-primary"
+                      color="black"
                       data-service={service.name}
                     >
-                      Appoint
+                      Make An Appointment
                     </Button>)}
 
                     {this.props.isAdmin ? (
                       <Button
                         onClick={(e) => this.deleteService(service._id)}
-                        className="btn btn-block btn-danger mt-2 btn-primary radius"
-                        color="danger"
+                        className="btn btn-outline-danger radius"
+                        color="black"
                       >
                         Delete
                       </Button>

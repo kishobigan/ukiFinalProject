@@ -3,6 +3,8 @@ import logo from "../logo.svg";
 import { NavLink } from "react-router-dom";
 import axios from "axios";
 
+import "./one.css"
+
 const NavBar = ({ user, setUser }) => {
   const logout = async () => {
     try {
@@ -22,17 +24,17 @@ const NavBar = ({ user, setUser }) => {
   const guestLinks = (
     <React.Fragment>
       <ul className="navbar-nav">
-        <li className="nav-item">
+        <li className="nav-item navPadding">
           <NavLink exact className="nav-link" to="/">
             Home
           </NavLink>
         </li>
-        <li className="nav-item">
+        <li className="nav-item navPadding">
           <NavLink className="nav-link" to="/signup">
             SignUp
           </NavLink>
         </li>
-        <li className="nav-item">
+        <li className="nav-item navPadding">
           <NavLink className="nav-link" to="/login">
             Login
           </NavLink>
@@ -44,18 +46,18 @@ const NavBar = ({ user, setUser }) => {
   const userLinks = (
     <React.Fragment>
       <ul className="navbar-nav">
-        <li className="nav-item">
-          <NavLink exact className="nav-link" to="/">
+        <li className="nav-item navPadding">
+          <NavLink exact className="nav-link navPadding" to="/">
             Home
           </NavLink>
         </li>
-        <li className="nav-item">
+        <li className="nav-item navPadding">
           <NavLink className="nav-link" to="/services">
-          Services Stations
+          Service Stations
           </NavLink>
         </li>
         {user ? (
-          <li className="nav-item">
+          <li className="nav-item navPadding">
           <NavLink className="nav-link" to="/appointments">
             Appointments
           </NavLink>

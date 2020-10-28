@@ -54,7 +54,7 @@ export default class Signup extends Component {
 
             <div className="col-lg-4 login-con">
             <form className="mt-4" onSubmit={this.submitSignupForm}>
-        <h3>Sign Up</h3>
+        <h3 className="center">Sign Up</h3>
         <hr />
         <div
           className="alert alert-danger d-none"
@@ -107,7 +107,7 @@ export default class Signup extends Component {
             required
           />
         </div>
-        <button type="submit" className="btn btn-primary btn-block col-4-btn radius">
+        <button type="submit" className="btn btn-outline-primary btn-block col-6-btn radius">
           Sign Up
         </button>
       </form>

@@ -124,10 +124,10 @@ export default class ListAdmins extends Component {
                     <br />
                     <Button
                       onClick={(e) => this.deleteAdmin(admin._id)}
-                      className="btn btn-danger mt-2 radius"
+                      className="btn btn-outline-dange mt-2 radius"
                       data-doctor={admin.name}
                     >
-                      Delete
+                      hi
                     </Button>
                   </li>
                 );

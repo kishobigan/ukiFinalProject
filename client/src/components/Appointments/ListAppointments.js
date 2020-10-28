@@ -15,13 +15,13 @@ const ListAppointments = ({ appointments, onDelete , onUpdate, service}) => {
 
   const user = JSON.parse(localStorage.getItem("servicesAppointmentUser"))
   return (
-    <div className="container">
+    <div className="container center">
       <div className="row">
-        <div className="col-lg-2">
+        <div className="col-lg-2 center">
 
         </div>
 
-        <div className="col-lg-8">
+        <div className="col-lg-8 center">
 
       <ul>
       {appointments.map((item) => {
@@ -37,7 +37,7 @@ const ListAppointments = ({ appointments, onDelete , onUpdate, service}) => {
               <div className="col-lg-9 mr-auto">
               <Media body>
 
-                
+
                 <p className=" mb-0 mr-auto">
                   <span style={{fontSize: "18px"}} className="font-weight-bold">Service station name:</span>{" "}{} <br />
                   <span style={{fontSize: "18px"}} className="font-weight-bold">Driver Name:</span>{" "}{item.driverName} <br />
@@ -55,15 +55,15 @@ const ListAppointments = ({ appointments, onDelete , onUpdate, service}) => {
               <div className="col-lg-3 float-right ml-auto">
 
                 <div className="mr-auto">
-                {user.isAdmin ? <Button color="danger" className="mr-3 btn-primary btn-block mt-1 mb-1 radius" id={item._id}
+                {user.isAdmin ? <Button color="black" className="btn btn-outline-danger radius" id={item._id}
                     onClick={handleDelete}> Reject
                 </Button> : ""}
                 </div>
 
                 <div>
-                {user.isAdmin && item.accepted===false ? <Button color="primary" className="radius btn btn-primary btn-block mt-1 mb-1" id={item._id} onClick={handleUpdate}>
+                {user.isAdmin && item.accepted===false ? <Button color="black" className="btn btn-outline-primary radius" id={item._id} onClick={handleUpdate}>
                   Accept
-                </Button> : <span><Button color="success" className="btn btn-primary btn-block mt-1 mb-1 radius" disabled>
+                </Button> : <span><Button  className="btn btn-success radius" disabled>
                   Accepted
                 </Button></span>}
                 </div>

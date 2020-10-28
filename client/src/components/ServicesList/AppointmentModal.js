@@ -93,13 +93,13 @@ const AppointmentModal = (props) => {
               <label>Description</label>
               <textarea className="form-control" value={description} onChange={(e) => setDescription(e.target.value)}></textarea>
             </div>
-            <button type="submit" className="btn btn-success radius">
+            <button type="submit" className="btn btn-outline-primary radius">
               Make Appointment
             </button>
           </form>
         </ModalBody>
         <ModalFooter>
-          <Button color="danger" onClick={toggle}>
+          <Button className="btn btn-outline-danger" color="black" onClick={toggle}>
             Cancel
           </Button>
         </ModalFooter>

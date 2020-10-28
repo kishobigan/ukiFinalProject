@@ -102,7 +102,7 @@ export default function AddService(props) {
           required
         ></textarea>
       </div>
-      <button type="submit" className="btn btn-primary btn-block col-4-btn radius">
+      <button type="submit" className="btn btn-outline-primary radius">
         Add Service Station
       </button>
     </form>
