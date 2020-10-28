@@ -1,0 +1,179 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  min-height: 100%;
+  position: relative;
+}
+*{
+  font-family: 'Public Sans', sans-serif;
+
+}
+.container {
+  margin-bottom: 100px;
+}
+.card-border {
+  border: 2px solid #007bff;
+}
+li {
+  list-style-type: none;
+}
+
+.delete-btn {
+  border: none;
+  padding: 0;
+}
+.delete-btn > i {
+  padding: 10px 12px;
+}
+.dropdown-menu {
+  border: 1px solid #333;
+}
+.dropdown-divider {
+  border: 1px solid #333;
+}
+.dropdown-item:hover {
+  background-color: #007bff;
+  color: white;
+}
+a {
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #343a40;
+  text-align: center;
+}
+
+
+.col-7-img{
+  background-image: url(https://www.thecarmech.com/wp-content/uploads/2020/06/new-image.jpg);
+  min-height: 600px;
+  width: 100%;
+  background-size: cover;
+
+}
+
+.home-col-7-title{
+  font-size: 40px;
+  font-weight: 600;
+  color: #fff;
+  background-color: #007bff;
+  width: fit-content;
+  padding: 20px;
+  opacity: 0.9;
+  /* text-transform: uppercase; */
+  margin-top: 300px;
+  border-top: 5px solid #fff;
+  text-transform: capitalize;
+}
+
+.home-col-4-title{
+  font-size: 50px;
+  font-weight: 800;
+  margin-top: 150px;
+  margin-bottom: 30px;
+}
+
+.col-4-btn{
+  padding: 20px 0;
+  font-size: 20px;
+  border-radius: 2px;
+  background-color: #007bff !important;
+  border-color: #007bff !important;
+}
+
+.col-4-btn:hover{
+  box-shadow: 0px 4px 15px rgb(163, 163, 163);
+
+}
+
+@media screen and (max-width: 990px) {
+  .home-col-4-title{
+    margin-top: 5px;
+  }
+}
+
+.home-2nd-con-fluid{
+  background-color: #fff;
+}
+
+.home-font-awesome-icon{
+  font-size: 60px;
+  color: #007bff;
+}
+
+.home-font-awesome-icon:hover{
+  color: #034183;
+}
+
+.home-2nd-con{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-shadow: 0px 0px 15px rgb(230, 227, 227);
+  border-radius: 2px;
+  margin-top: 30px;
+}
+
+.icon-head-home{
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.form-control{
+  height: 60px;
+  border-radius: 2px;
+}
+
+.btn-primary{
+  height: 60px;
+  border-radius: 2px;
+}
+
+.login-con{
+  box-shadow: 0px 0px 15px rgb(221, 220, 220);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 50px;
+  border-radius: 4px;
+}
+
+.navbar-nav .nav-link{
+  color: #161616 !important;
+  font-weight: 700;
+}
+
+.navbar-nav .nav-link:hover{
+  background-color: #007bff;
+  border-radius: 4px;
+  color: #fff !important;
+}
+
+.navbar-nav .nav-link:active{
+  background-color: #007bff;
+  border-radius: 4px;
+  color: #fff !important;
+}
+
+.navbar-nav .nav-link:focus{
+  background-color: #007bff;
+  border-radius: 4px;
+  color: #fff !important;
+}
+
+
+
+.nav-cont{
+  border-bottom: 2px solid #dfdfdf;
+}
