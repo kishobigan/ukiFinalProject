@@ -13,15 +13,16 @@ const ListAppointments = ({ appointments, onDelete , onUpdate, service}) => {
   }
 
 
+
   const user = JSON.parse(localStorage.getItem("servicesAppointmentUser"))
   return (
-    <div className="container center">
+    <div className="container">
       <div className="row">
-        <div className="col-lg-2 center">
+        <div className="col-lg-2 ">
 
         </div>
 
-        <div className="col-lg-8 center">
+        <div className="col-lg-8">
 
       <ul>
       {appointments.map((item) => {
@@ -55,7 +56,7 @@ const ListAppointments = ({ appointments, onDelete , onUpdate, service}) => {
               <div className="col-lg-3 float-right ml-auto">
 
                 <div className="mr-auto">
-                {user.isAdmin ? <Button color="black" className="btn btn-outline-danger radius" id={item._id}
+                {user.isAdmin ? <Button color="black" className="btn btn-outline-danger radius"  id={item._id}
                     onClick={handleDelete}> Reject
                 </Button> : ""}
                 </div>
