@@ -56,13 +56,13 @@ const ListAppointments = ({ appointments, onDelete , onUpdate, service}) => {
               <div className="col-lg-3 float-right ml-auto">
 
                 <div className="mr-auto">
-                {user.isAdmin ? <Button color="black" className="btn btn-outline-danger radius"  id={item._id}
+                {user.isAdmin ? <Button color="black" className="btn btn-outline-danger radius hi"  id={item._id}
                     onClick={handleDelete}> Reject
                 </Button> : ""}
                 </div>
 
                 <div>
-                {user.isAdmin && item.accepted===false ? <Button color="black" className="btn btn-outline-primary radius" id={item._id} onClick={handleUpdate}>
+                {user.isAdmin && item.accepted===false ? <Button color="black" className="btn btn-outline-primary radius hi" id={item._id} onClick={handleUpdate}>
                   Accept
                 </Button> : <span><Button  className="btn btn-success radius" disabled>
                   Accepted

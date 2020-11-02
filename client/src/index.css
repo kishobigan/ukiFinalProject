@@ -177,3 +177,10 @@ footer {
 .nav-cont{
   border-bottom: 2px solid #dfdfdf;
 }
+.pad__btn{
+  padding: 20px;
+}
+.hi{
+  padding-left: 20px;
+  padding-right: 27px;
+}
