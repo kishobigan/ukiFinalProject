@@ -184,3 +184,20 @@ footer {
   padding-left: 20px;
   padding-right: 27px;
 }
+.padd{
+  padding: 10px;
+  margin-top: 16px;
+  margin-bottom: 14px;
+}
+.card__pro{
+  margin: 10px;
+  padding: auto auto auto auto;
+}
+.card__1{
+  display: inline-block;
+   width: 540px;
+   height: 275px;
+   border: 0px solid blue;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   overflow-y: auto;
+}

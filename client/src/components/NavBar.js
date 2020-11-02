@@ -101,7 +101,8 @@ const NavBar = ({ user, setUser }) => {
         </li>
         <li className="nav-item">
           <NavLink
-            className="btn btn-danger ml-auto mr-4"
+            color="black"
+            className="btn btn-outline-primary"
             type="button"
             onClick={logout}
             to="/"

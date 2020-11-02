@@ -22,21 +22,21 @@ const ListAppointments = ({ appointments, onDelete , onUpdate, service}) => {
 
         </div>
 
-        <div className="col-lg-8">
+        <div className="card-deck">
 
       <ul>
       {appointments.map((item) => {
         return (
           <li
-            className="p-1  p-3 mb-3 bg-white rounded login-con"
+            className="card__pro card__1"
             style={{ borderRadius: "10px" }}
             key={item._id}
           >
-            <div>
+            <div className="card bg-light padd">
 
               <div className="row">
               <div className="col-lg-9 mr-auto">
-              <Media body>
+
 
 
                 <p className=" mb-0 mr-auto">
@@ -50,7 +50,6 @@ const ListAppointments = ({ appointments, onDelete , onUpdate, service}) => {
                   <span style={{fontSize: "18px"}} className="font-weight-bold">Phone Number:</span>{" "}{item.phoneNumber}<br/>
                 </p>
 
-              </Media>
               </div>
 
               <div className="col-lg-3 float-right ml-auto">

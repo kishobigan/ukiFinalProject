@@ -13,7 +13,7 @@ class Appointments extends Component {
     this.state = {
       appointments: [],
       showAddBody: false,
-      orderBy: "patientName",
+      orderBy: "Name",
       orderDir: "asc",
       searchText: "",
       loaded: false,

@@ -75,7 +75,7 @@ const AppointmentModal = (props) => {
             </div>
             <div className="form-group">
               <label>Phone Number</label>
-              <input type="phone" className="form-control" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} placeholder="Phone"/>
+              <input type="tel" pattern="[0-7]{3}[0-9]{8}" className="form-control" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} placeholder="Phone Number 07*********"/>
             </div>
             <div className="form-group">
               <label>Email</label>
