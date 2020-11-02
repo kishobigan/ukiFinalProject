@@ -132,8 +132,8 @@ footer {
 }
 
 .form-control{
-  height: 60px;
-  border-radius: 2px;
+  height: 40px;
+  border-radius: 3px;
 }
 
 .btn-primary{
