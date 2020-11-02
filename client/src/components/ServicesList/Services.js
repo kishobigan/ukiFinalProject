@@ -134,12 +134,12 @@ export default class Services extends Component {
             </div>
           </form>
           {this.state.services.length === 0 ? (
-            <h3 className="mt-4">No services found</h3>
+            <h3 className="mt-4">No service stations found</h3>
           ) : (
-            <ul className="list-group mt-4">
+            <ul className="card-deck">
               {this.state.filteredServices.map((service) => {
                 return (
-                  <li className="list-group-item" key={service._id}>
+                  <li className="card bg-light padd" key={service._id}>
                     <span className="font-weight-bold">Station Name:</span> {service.name} <br /> <span className="font-weight-bold">District:</span> {service.district} <br />
                     <span className="font-weight-bold">Location:</span> {service.address}
                     <br />
