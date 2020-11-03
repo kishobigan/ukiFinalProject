@@ -136,11 +136,12 @@ export default class Services extends Component {
           {this.state.services.length === 0 ? (
             <h3 className="mt-4">No service stations found</h3>
           ) : (
-            <ul className="card-deck">
+            <ul className="card-columns">
               {this.state.filteredServices.map((service) => {
                 return (
-                  <li className="card bg-light padd" key={service._id}>
-                    <span className="font-weight-bold">Station Name:</span> {service.name} <br /> <span className="font-weight-bold">District:</span> {service.district} <br />
+                  <li className="card bg-light padd card__pro card__2" key={service._id}>
+                    <span className="font-weight-bold">Station Name:</span> {service.name} <br />
+                    <span className="font-weight-bold">District:</span> {service.district} <br />
                     <span className="font-weight-bold">Location:</span> {service.address}
                     <br />
                     {this.props.isAdmin? (
@@ -162,7 +163,7 @@ export default class Services extends Component {
                     {this.props.isAdmin ? (
                       <Button
                         onClick={(e) => this.deleteService(service._id)}
-                        className="btn btn-outline-danger radius"
+                        className="btn btn-outline-danger radius all__btn"
                         color="black"
                       >
                         Delete

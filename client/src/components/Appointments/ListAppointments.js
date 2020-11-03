@@ -3,7 +3,6 @@ import { Media, Button,  Modal, ModalHeader } from "reactstrap";
 import "../one.css"
 
 
-
 const ListAppointments = ({ appointments, onDelete , onUpdate, service}) => {
   const handleDelete = (event) => {
     onDelete(event.target.id);
@@ -32,7 +31,7 @@ const ListAppointments = ({ appointments, onDelete , onUpdate, service}) => {
             style={{ borderRadius: "10px" }}
             key={item._id}
           >
-            <div className="card bg-light padd">
+            <div className="card  padd">
 
               <div className="row">
               <div className="col-lg-9 mr-auto">
