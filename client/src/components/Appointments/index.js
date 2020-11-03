@@ -143,7 +143,7 @@ class Appointments extends Component {
     return (
       <>
         <Container className="mt-4">
-          {user.isAdmin ? (<h3 className="center">All Appointments</h3>) : <h3 className="center">My Appointments</h3>}
+          {user.isAdmin ? (<h3 className="center">APPOINMENTS</h3>) : <h3 className="center">My Appointments</h3>}
           <hr />
           <div
             className="alert alert-danger d-none"

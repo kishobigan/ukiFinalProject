@@ -57,7 +57,7 @@ const AppointmentModal = (props) => {
           <form onSubmit={submitAppointmentForm}>
             <div className="form-group">
             <label>Vehile Type</label>
-              <select className="custom-select" value={vehileType} onChange={(e) => setVehileType(e.target.value)}>
+              <select className="custom-select" value={vehileType} onChange={(e) => setVehileType(e.target.value)} required>
                 <option>Motor Cycle</option>
                 <option>Three Wheler</option>
                 <option>Car</option>
@@ -67,27 +67,27 @@ const AppointmentModal = (props) => {
             </div>
             <div className="form-group">
               <label>Vehile Number</label>
-              <input type="text" className="form-control" value={vehileNumber} onChange={(e) => setVehileNumber(e.target.value)} placeholder="Vehile number"/>
+              <input type="text" className="form-control" value={vehileNumber} onChange={(e) => setVehileNumber(e.target.value)} placeholder="Vehile number" required/>
             </div>
             <div className="form-group">
               <label>Driver Name</label>
-              <input type="text" className="form-control" value={driverName} onChange={(e) => setDrivername(e.target.value)} placeholder="Driver Name"/>
+              <input type="text" className="form-control" value={driverName} onChange={(e) => setDrivername(e.target.value)} placeholder="Driver Name" required/>
             </div>
             <div className="form-group">
               <label>Phone Number</label>
-              <input type="tel" pattern="[0-7]{3}[0-9]{8}" className="form-control" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} placeholder="Phone Number 07*********"/>
+              <input type="tel" pattern="[0-7]{3}[0-9]{8}" className="form-control" value={phoneNumber} onChange={(e) => setPhoneNumber(e.target.value)} placeholder="Phone Number" required/>
             </div>
             <div className="form-group">
               <label>Email</label>
-              <input type="email" className="form-control" value={userEmail} onChange={(e) => setEmail(e.target.value)} placeholder="Email"/>
+              <input type="email" className="form-control" value={userEmail} onChange={(e) => setEmail(e.target.value)} placeholder="Email" required/>
             </div>
             <div className="form-group">
               <label>Date</label>
-              <input type="date" className="form-control" value={date} onChange={(e) => setDate(e.target.value)} placeholder="Date"/>
+              <input type="date" className="form-control" value={date} onChange={(e) => setDate(e.target.value)} placeholder="Date" required/>
             </div>
             <div className="form-group">
               <label>Time</label>
-              <input type="time" className="form-control" value={time} onChange={(e) => setTime(e.target.value)} placeholder="Time"/>
+              <input type="time" className="form-control" value={time} onChange={(e) => setTime(e.target.value)} placeholder="Time" required/>
             </div>
             <div className="form-group">
               <label>Description</label>

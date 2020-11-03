@@ -13,8 +13,8 @@ export default class Home extends Component {
               <h1 className="home-col-7-title">No More waiting <br/>For Service Your Vehicle</h1>
             </div>
             <div className="col-lg-4">
-              <h1 className="home-col-4-title">Let's reserve <br/>a time for, service <br/><span style={{color: "#007bff", textTransform: "capitalize", fontSize: "60px"}}>your vehicle</span></h1>
-              <Link className="btn btn-primary btn-block col-4-btn radius" to="/services">Let's Book</Link>
+              <h1 className="home-col-4-title">Let's reserve <br/>a time for, service <br/><span style={{color: "rgb(2,94,204)", textTransform: "capitalize", fontSize: "60px"}}>your vehicle</span></h1>
+              <Link className="btn lo__btn btn-block btn__padd radius" to="/services">Let's Book</Link>
             </div>
           </div>
         </div>

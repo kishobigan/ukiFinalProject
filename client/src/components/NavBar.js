@@ -102,7 +102,7 @@ const NavBar = ({ user, setUser }) => {
         <li className="nav-item">
           <NavLink
             color="black"
-            className="btn btn-outline-primary"
+            className="btn btn-outline lo__btn"
             type="button"
             onClick={logout}
             to="/"

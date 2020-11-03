@@ -110,9 +110,9 @@ export default class Services extends Component {
           <div className="col-lg-8 login-con">
           <div className=" mt-4">
           {this.props.isAdmin ? (
-            <h3 className="center">Service Stations List</h3>
+            <h3 className="center">SERVICE STATION LIST</h3>
           ):(
-            <h1 className="center">Find service stations near you.</h1>
+            <h1 className="center">SELECT YOUR FAVOURITE SERVICE STATION</h1>
           )}
           <hr />
           <div
@@ -139,7 +139,7 @@ export default class Services extends Component {
             <ul className="card-columns">
               {this.state.filteredServices.map((service) => {
                 return (
-                  <li className="card bg-light padd card__pro card__2" key={service._id}>
+                  <li className="card padd card__pro card__2" key={service._id}>
                     <span className="font-weight-bold">Station Name:</span> {service.name} <br />
                     <span className="font-weight-bold">District:</span> {service.district} <br />
                     <span className="font-weight-bold">Location:</span> {service.address}

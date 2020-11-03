@@ -41,7 +41,7 @@ export default function AddService(props) {
 
             <div className="col-lg-8 login-con">
             <form className=" mt-4" onSubmit={addServiceFormSubmit}>
-      <h3 className="center">Add Service</h3>
+      <h3 className="center">ADD SERVICE STATION</h3>
       <hr />
       <div className="alert d-none" id="alert" role="alert"></div>
       <div className="form-group">

@@ -10,8 +10,10 @@ html {
   position: relative;
 }
 *{
-  font-family: 'Public Sans', sans-serif;
-
+  font-family: 'Spectral SC', serif;
+}
+body{
+  background-color: #f7f9fc
 }
 .container {
   margin-bottom: 100px;
@@ -68,7 +70,7 @@ footer {
   font-size: 40px;
   font-weight: 600;
   color: #fff;
-  background-color: #007bff;
+  background-color: rgb(2,94,204);
   width: fit-content;
   padding: 20px;
   opacity: 0.9;
@@ -155,13 +157,13 @@ footer {
 }
 
 .navbar-nav .nav-link:hover{
-  background-color: #007bff;
+  background-color: rgb(2,94,204);
   border-radius: 4px;
   color: #fff !important;
 }
 
 .navbar-nav .nav-link:active{
-  background-color: #007bff;
+  background-color: rgb(2,94,204);
   border-radius: 4px;
   color: #fff !important;
 }
@@ -212,4 +214,11 @@ footer {
 .all__btn{
   margin-left: 50px;
   margin-right: auto;
+}
+.lo__btn{
+  background-color: rgb(2,94,204);
+  color:white;
+}
+.btn__padd{
+  padding: 10px;
 }
