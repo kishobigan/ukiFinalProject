@@ -204,12 +204,13 @@ footer {
    overflow-y: auto;
 }
 .card__2{
-    display: block;
-    height: 150px;
+    display: none;
+    height: auto;
     border: 0px solid blue;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     overflow-y: auto;
     margin: auto;
+    padding: 10px;
 }
 .all__btn{
   margin-left: 50px;
@@ -221,4 +222,7 @@ footer {
 }
 .btn__padd{
   padding: 10px;
+}
+.la__padd{
+  padding: 5px;
 }

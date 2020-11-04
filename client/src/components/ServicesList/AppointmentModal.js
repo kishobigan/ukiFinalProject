@@ -91,7 +91,7 @@ const AppointmentModal = (props) => {
             </div>
             <div className="form-group">
               <label>Description</label>
-              <textarea className="form-control" value={description} onChange={(e) => setDescription(e.target.value)}></textarea>
+              <textarea className="form-control" value={description} onChange={(e) => setDescription(e.target.value)} placeholder="Discribe about your services"></textarea>
             </div>
             <button type="submit" className="btn btn-outline-primary radius">
               Make Appointment

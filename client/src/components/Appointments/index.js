@@ -129,6 +129,8 @@ class Appointments extends Component {
             }}
           >
             <Spinner
+              type="grow"
+              color="primary"
               animation="border"
               role="status"
               style={{ width: "3rem", height: "3rem" }}

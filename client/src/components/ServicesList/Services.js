@@ -90,6 +90,8 @@ export default class Services extends Component {
             }}
           >
             <Spinner
+            type="grow"
+            color="primary"
               animation="border"
               role="status"
               style={{ width: "3rem", height: "3rem" }}
@@ -139,7 +141,7 @@ export default class Services extends Component {
             <ul className="card-columns">
               {this.state.filteredServices.map((service) => {
                 return (
-                  <li className="card padd card__pro card__2" key={service._id}>
+                  <li className="card col-12 card__2" key={service._id}>
                     <span className="font-weight-bold">Station Name:</span> {service.name} <br />
                     <span className="font-weight-bold">District:</span> {service.district} <br />
                     <span className="font-weight-bold">Location:</span> {service.address}
