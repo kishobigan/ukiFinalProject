@@ -142,9 +142,9 @@ export default class Services extends Component {
               {this.state.filteredServices.map((service) => {
                 return (
                   <li className="card col-12 card__2" key={service._id}>
-                    <span className="font-weight-bold">Station Name:</span> {service.name} <br />
-                    <span className="font-weight-bold">District:</span> {service.district} <br />
-                    <span className="font-weight-bold">Location:</span> {service.address}
+                    <span className="font-weight-bold">Station Name:<br/></span> {service.name} <br />
+                    <span className="font-weight-bold">District:<br/></span> {service.district} <br />
+                    <span className="font-weight-bold">Location:<br/></span> {service.address}
                     <br />
                     {this.props.isAdmin? (
                       ""
