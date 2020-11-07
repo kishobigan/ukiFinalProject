@@ -11,6 +11,7 @@ const AppointmentsSchema = new Schema({
     type: Schema.Types.ObjectId,
     ref: "service",
   },
+  servicName:{type:String},
   vehileNumber:{type:String},
   userId:{type:String},
   vehileType:{type:String},

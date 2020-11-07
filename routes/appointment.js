@@ -28,6 +28,7 @@ router.post(
     const newAppointment = new Appointment({
       userId:req.body.userId,
       vehileNumber: req.body.vehileNumber,
+      servicName: req.body.servicName,
       vehileType: req.body.vehileNumber,
       driverName: req.body.driverName,
       phoneNumber: req.body.phoneNumber,

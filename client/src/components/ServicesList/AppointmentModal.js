@@ -4,6 +4,7 @@ import axios from "axios";
 
 const AppointmentModal = (props) => {
   const {serviceName, modal, toggle, email } = props;
+  const [servicName, setServicName] = useState("")
   const [vehileType, setVehileType] = useState("")
   const [vehileNumber, setVehileNumber] = useState("")
   const [driverName, setDrivername] = useState("")
@@ -17,6 +18,7 @@ const AppointmentModal = (props) => {
     e.preventDefault();
     const userId = JSON.parse(localStorage.getItem("servicesAppointmentUser"))
     const data = {
+      servicName,
       vehileNumber,
       vehileType,
       driverName,
@@ -55,6 +57,10 @@ const AppointmentModal = (props) => {
         <ModalHeader toggle={toggle}>Appointment for {serviceName}</ModalHeader>
         <ModalBody>
           <form onSubmit={submitAppointmentForm}>
+          <div className="form-group">
+              <label>Service Station Name</label>
+              <input type="text" className="form-control" value={servicName}  onChange={(e) => setServicName(e.target.value)} placeholder="serviceName" />
+            </div>
             <div className="form-group">
             <label>Vehile Type</label>
               <select className="custom-select" value={vehileType} onChange={(e) => setVehileType(e.target.value)} required>

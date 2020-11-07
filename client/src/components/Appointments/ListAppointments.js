@@ -1,9 +1,10 @@
 import React from "react";
 import { Media, Button,  Modal, ModalHeader } from "reactstrap";
+//import services from "../ServicesList/Service"
 import "../one.css"
 
 
-const ListAppointments = ({ appointments, onDelete , onUpdate, service}) => {
+const ListAppointments = ({appointments, onDelete , onUpdate, service}) => {
   const handleDelete = (event) => {
     onDelete(event.target.id);
   };
@@ -22,7 +23,6 @@ const ListAppointments = ({ appointments, onDelete , onUpdate, service}) => {
         </div>
 
         <div className="card-deck">
-
       <ul>
       {appointments.map((item) => {
         return (
@@ -39,7 +39,7 @@ const ListAppointments = ({ appointments, onDelete , onUpdate, service}) => {
 
 
                 <p className=" mb-0 mr-auto">
-                  <span style={{fontSize: "18px"}} className="font-weight-bold">Service station name:</span>{" "}{} <br />
+                  <span style={{fontSize: "18px"}} className="font-weight-bold">Service station name:</span>{" "}{item.servicName} <br />
                   <span style={{fontSize: "18px"}} className="font-weight-bold">Driver Name:</span>{" "}{item.driverName} <br />
                   <span style={{fontSize: "18px"}} className="font-weight-bold">Description:</span> {item.description}{" "}<br />
                   <span style={{fontSize: "18px"}} className="font-weight-bold">Date:</span>{" "}{item.date}<br/>
